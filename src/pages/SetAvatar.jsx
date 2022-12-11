@@ -11,7 +11,7 @@ import Modal from "../components/Modal";
 
 const toastOptions = {
   position: "bottom-right",
-  autoClose: 2000,
+  autoClose: 5000,
   pauseOnHover: true,
   draggable: true,
   theme: "dark",
@@ -55,7 +55,7 @@ const SetAvatar = () => {
           }
         } else {
           setLoading(false);
-          toast.error(request.statusText, toastOptions);
+          toast.error("error set avatar, please try again", toastOptions);
         }
       });
   };
